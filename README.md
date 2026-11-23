@@ -96,16 +96,8 @@ jobconnect-portal/
    `C:\Users\HP\.gemini\antigravity\scratch\jobconnect-portal`
 
 ### Step 2: Configure MongoDB (Cloud Atlas or Local)
-1. In the `backend` folder, copy `.env.example` to `.env`:
-   ```env
-   PORT=5000
-   NODE_ENV=development
-   # Paste your MongoDB Atlas Connection String here:
-   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxx.mongodb.net/jobconnect?retryWrites=true&w=majority
-   JWT_SECRET=jobconnect_super_secret_jwt_token_key_2026_xyz
-   FRONTEND_URL=http://localhost:5173
-   ```
-2. *(See the next section below for step-by-step instructions on creating a 100% Free MongoDB Atlas database).*
+1. In the `backend` folder, configure your database connection string in `.env`.
+2. (See the guide below for step-by-step instructions on setting up MongoDB Atlas).
 
 ### Step 3: Populate Demo Seed Data
 In VS Code, open a new Terminal (`Ctrl + ~`) and run:
