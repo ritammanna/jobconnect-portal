@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Sensitive Environment files - NEVER PUSH TO GITHUB!
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+frontend/.env
+
+# Build outputs
+dist/
+frontend/dist/
+build/
+
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
