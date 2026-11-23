@@ -95,31 +95,4 @@ jobconnect-portal/
 - **Deployment**: Vercel (Frontend), Render (Backend API)
 
 
----
 
-## 🌐 How to Deploy Live (Connecting Frontend & Backend with URLs)
-
-Instead of running on localhost, you can deploy both sides online completely free:
-
-### 1. Backend Deployment (Render or Railway)
-1. Push your repository to GitHub.
-2. Go to [Render.com](https://render.com) and click **New ➔ Web Service**.
-3. Connect your GitHub repository and set:
-   - Root Directory: `backend`
-   - Build Command: `npm install`
-   - Start Command: `npm start`
-4. Add Environment Variables on Render:
-   - `MONGO_URI` = Your MongoDB Atlas Connection String
-   - `JWT_SECRET` = A strong secret key
-   - `NODE_ENV` = `production`
-5. Render gives you a live link: `https://jobconnect-backend.onrender.com`.
-
-### 2. Frontend Deployment (Vercel)
-1. Go to [Vercel.com](https://vercel.com) and click **Add New ➔ Project**.
-2. Select your repository:
-   - Root Directory: `frontend`
-   - Framework Preset: `Vite`
-3. Add Environment Variable:
-   - `VITE_API_URL` = `https://jobconnect-backend.onrender.com/api`
-4. Click **Deploy**. Vercel will give you a live frontend URL (e.g., `https://jobconnect-portal.vercel.app`).
-Now your application is 100% online with live linked URLs!
