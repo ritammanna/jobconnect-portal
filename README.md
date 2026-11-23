@@ -160,17 +160,6 @@ To run without needing a local MongoDB installation and to easily connect live o
    - Replace `<password>` with your database user password.
    - Paste this into `backend/.env` as `MONGO_URI`.
 
----
-
-## 🔑 Quick Demo Login Credentials
-
-You can test all 3 roles instantly using the **1-Click Test Logins** on the login page, or manually entering:
-
-| Role | Email | Password | What You Can Test |
-| :--- | :--- | :--- | :--- |
-| **Super Admin** | `admin@jobconnect.com` | `admin123` | Platform analytics, user activation/blocking, job moderation, company verification |
-| **Recruiter** | `techcorp@recruiter.com` | `recruiter123` | Post new jobs, view applicant resumes, shortlist/reject, schedule interviews |
-| **Job Seeker** | `rahul.dev@seeker.com` | `seeker123` | Search & filter jobs, 1-click apply, track application status, join scheduled interview |
 
 ---
 
