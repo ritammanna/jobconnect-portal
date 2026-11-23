@@ -87,78 +87,12 @@ jobconnect-portal/
 
 ---
 
-## ⚡ Step-by-Step: How to Run in VS Code
+## 🛠️ Technology Stack
 
-### Step 1: Open the Project in VS Code
-1. Open **Visual Studio Code**.
-2. Go to **File ➔ Open Folder...**
-3. Select the project directory:
-   `C:\Users\HP\.gemini\antigravity\scratch\jobconnect-portal`
-
-### Step 2: Configure MongoDB (Cloud Atlas or Local)
-1. In the `backend` folder, configure your database connection string in `.env`.
-2. (See the guide below for step-by-step instructions on setting up MongoDB Atlas).
-
-### Step 3: Populate Demo Seed Data
-In VS Code, open a new Terminal (`Ctrl + ~`) and run:
-```bash
-cd backend
-npm run seed
-```
-This automatically populates the database with:
-- 🛡️ Super Admin account
-- 💼 2 Verified Recruiting Companies (TechCorp, CloudScale)
-- 👤 2 Job Seekers with uploaded resumes and skills
-- 🚀 8+ realistic jobs across IT, Design, DevOps, Management
-- 📋 Sample active applications with *Shortlisted* and *Interview Scheduled* statuses!
-
-### Step 4: Start the Backend Server
-In the backend terminal, run:
-```bash
-npm run dev
-# or
-npm start
-```
-You will see:
-```
-🚀 JobConnect Backend Server running in development mode on port 5000
-📡 Health Check: http://localhost:5000/api/health
-✅ MongoDB Connected Successfully
-```
-
-### Step 5: Start the Frontend Application
-Open a **second terminal split** in VS Code (`Ctrl + Shift + 5` or click the `+` button in Terminal), then run:
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Open your browser at:
-`http://localhost:5173`
-
----
-
-## 🍃 Step-by-Step: Setting Up Cloud MongoDB Atlas (Link Based)
-
-To run without needing a local MongoDB installation and to easily connect live online:
-
-1. **Sign Up / Log In to MongoDB Atlas**:
-   - Go to [https://www.mongodb.com/cloud/atlas/register](https://www.mongodb.com/cloud/atlas/register).
-   - Sign up with your Google account (100% Free).
-2. **Create a Free Cluster**:
-   - Select **M0 Free** (Shared) cluster.
-   - Choose your nearest cloud provider region (e.g., AWS Mumbai / Singapore / US).
-   - Click **Create Deployment**.
-3. **Set Up Security & Credentials**:
-   - Create a Database User (e.g., Username: `jobconnect_admin`, Password: `your_strong_password`).
-   - Under **Network Access ➔ IP Access List**, click **Add IP Address**.
-   - Select **Allow Access From Anywhere (`0.0.0.0/0`)** and click **Confirm**.
-4. **Get the Connection String**:
-   - Go to **Database ➔ Connect ➔ Drivers (Node.js)**.
-   - Copy the connection string format:
-     `mongodb+srv://jobconnect_admin:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority`
-   - Replace `<password>` with your database user password.
-   - Paste this into `backend/.env` as `MONGO_URI`.
+- **Frontend**: React.js, Vite, Tailwind CSS, Lucide Icons, Axios, React Router
+- **Backend**: Node.js, Express.js, JWT Authentication, bcryptjs, Multer
+- **Database**: MongoDB Atlas Cloud
+- **Deployment**: Vercel (Frontend), Render (Backend API)
 
 
 ---
